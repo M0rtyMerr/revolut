@@ -1,0 +1,22 @@
+platform :ios, '10.0'
+
+target 'CurrencyChecker' do
+  use_frameworks!
+  pod 'ReactorKit'
+  pod 'RxDataSources'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Moya/RxSwift'
+
+  target 'CurrencyCheckerTests' do
+    inherit! :search_paths
+    pod 'RxBlocking'
+   
+  end
+
+  target 'CurrencyCheckerUITests' do
+    inherit! :search_paths
+
+  end
+
+end
