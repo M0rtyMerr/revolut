@@ -7,10 +7,13 @@ target 'CurrencyChecker' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Moya/RxSwift'
+  pod 'Then'
 
   target 'CurrencyCheckerTests' do
     inherit! :search_paths
     pod 'RxBlocking'
+    pod 'Quick'
+    pod 'Nimble'
    
   end
 
