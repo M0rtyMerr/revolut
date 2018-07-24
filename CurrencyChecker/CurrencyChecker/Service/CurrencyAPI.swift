@@ -27,7 +27,10 @@ extension CurrencyAPI: TargetType {
     }
     
     var sampleData: Data {
-        return Util.getJSON(name: "CurrencyResponse")
+        switch self {
+        case let .get(base):
+            return Util.getJSON(name: base == "EUR" ? "CurrencyResponse_EUR" : "CurrencyResponse_AUD")
+        }
     }
     
     var task: Task {
