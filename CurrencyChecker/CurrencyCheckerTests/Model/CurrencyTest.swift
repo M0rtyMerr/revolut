@@ -17,7 +17,7 @@ class CurrencyTest: QuickSpec {
         super.spec()
         describe("Mapping test") {
             it("maps correctly") {
-                let currency = try! self.decoder.decode(Currency.self, from: Util.getJSON(name: "CurrencyResponse"))
+                let currency = try! self.decoder.decode(Currency.self, from: Util.getJSON(name: "CurrencyResponse_EUR"))
                 
                 expect(currency.base) == "EUR"
                 expect(currency.date.timeIntervalSince1970) == 1532034000.0

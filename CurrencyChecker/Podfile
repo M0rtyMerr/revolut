@@ -4,6 +4,7 @@ target 'CurrencyChecker' do
   use_frameworks!
   pod 'ReactorKit'
   pod 'RxDataSources'
+  pod "RxSwiftExt"
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxCodable'
@@ -13,6 +14,7 @@ target 'CurrencyChecker' do
   target 'CurrencyCheckerTests' do
     inherit! :search_paths
     pod 'RxBlocking'
+    pod 'RxTest', '~> 4.0'
     pod 'Quick'
     pod 'Nimble'
    
