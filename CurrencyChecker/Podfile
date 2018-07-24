@@ -6,6 +6,7 @@ target 'CurrencyChecker' do
   pod 'RxDataSources'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxCodable'
   pod 'Moya/RxSwift'
   pod 'Then'
 
