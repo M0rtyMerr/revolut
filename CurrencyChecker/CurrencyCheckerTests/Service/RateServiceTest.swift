@@ -1,5 +1,5 @@
 //
-//  CurrencyServiceTest.swift
+//  RateServiceTest.swift
 //  CurrencyCheckerTests
 //
 //  Created by Антон Назаров on 24/07/2018.
@@ -12,14 +12,14 @@ import Moya
 import RxBlocking
 @testable import CurrencyChecker
 
-class CurrencyServiceTest: QuickSpec {
+class RateServiceTest: QuickSpec {
     override func spec() {
         super.spec()
-        let currencyService = CurrencyService(currencyProvider: MoyaProvider<CurrencyAPI>(stubClosure: MoyaProvider.immediatelyStub))
+        let rateService = RateService(rateProvider: MoyaProvider<RateAPI>(stubClosure: MoyaProvider.immediatelyStub))
         
         describe("Currency service test") {
             it("returns single, which completes successfully") {
-                let currency = try! currencyService.get(base: "EUR").toBlocking().single()
+                let currency = try! rateService.get(base: "EUR").toBlocking().single()
                 
                 expect(currency.base) == "EUR"
             }
