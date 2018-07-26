@@ -10,6 +10,7 @@ target 'CurrencyChecker' do
   pod 'RxCodable'
   pod 'Moya/RxSwift'
   pod 'Then'
+  pod 'SwiftLint'
 
   target 'CurrencyCheckerTests' do
     inherit! :search_paths
@@ -22,7 +23,5 @@ target 'CurrencyChecker' do
 
   target 'CurrencyCheckerUITests' do
     inherit! :search_paths
-
   end
-
 end

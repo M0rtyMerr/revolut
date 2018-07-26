@@ -11,14 +11,13 @@ import RxSwift
 
 class RateService {
     private let rateProvider: MoyaProvider<RateAPI>
-    
+
     init(rateProvider: MoyaProvider<RateAPI>) {
         self.rateProvider = rateProvider
     }
-    
+
     func get(base: String) -> Single<Rate> {
         return rateProvider.rx.request(.get(base: base))
-                                  .map(Rate.self)
+                              .map(Rate.self)
     }
 }
-

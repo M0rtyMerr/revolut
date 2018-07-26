@@ -17,12 +17,12 @@ class RateInteractorImpl: RateInteractor {
     private let rateService: RateService
     private let scheduler: SchedulerType
     private let newRequest = PublishRelay<()>()
-    
+
     init(rateService: RateService, scheduler: SchedulerType) {
         self.rateService = rateService
         self.scheduler = scheduler
     }
-    
+
     func get(base: String) -> Observable<Rate> {
         newRequest.accept(())
         return Observable<Int>.interval(1, scheduler: scheduler)

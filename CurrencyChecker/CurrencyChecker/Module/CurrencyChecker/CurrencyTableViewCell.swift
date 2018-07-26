@@ -10,15 +10,16 @@ import UIKit
 import RxSwift
 
 class CurrencyTableViewCell: UITableViewCell {
+    // swiftlint:disable:next private_outlet
     @IBOutlet var value: UITextField!
     @IBOutlet private var name: UILabel!
     var disposeBag = DisposeBag()
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
         disposeBag = DisposeBag()
     }
-    
+
     func render(currency: Currency, enabled: Bool) {
         value.text = String(currency.value)
         name.text = currency.name

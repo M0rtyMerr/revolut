@@ -15,14 +15,13 @@ struct CurrenciesSection {
 
 extension CurrenciesSection: AnimatableSectionModelType {
     typealias Item = Currency
-    
+
     var identity: String {
         return title
     }
-    
+
     init(original: CurrenciesSection, items: [Currency]) {
         self = original
         self.items = items
     }
 }
-
