@@ -14,23 +14,21 @@ import RxSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds).then {
-            $0.backgroundColor = UIColor.white
-            $0.makeKeyAndVisible()
+
+    // swiftlint:disable:next discouraged_optional_collection
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]? = nil) -> Bool {
+        window = createWindow()
+
+        let currencyController = CurrencyTableViewController().then {
+            let rateService = RateService(rateProvider: MoyaProvider<RateAPI>())
+            let rateInteractor = RateInteractorImpl(rateService: rateService, scheduler: SerialDispatchQueueScheduler(qos: .default))
+            $0.reactor = CurrencyReactor(rateInteractor: rateInteractor)
         }
-        
-        let currencyController = CurrencyTableViewController()
-        let rateService = RateService(rateProvider: MoyaProvider<RateAPI>())
-        let rateInteractor = RateInteractorImpl(rateService: rateService, scheduler: SerialDispatchQueueScheduler(qos: .default))
-        currencyController.reactor = CurrencyReactor(rateInteractor: rateInteractor)
-        
+
         window?.rootViewController = UINavigationController(rootViewController: currencyController)
         return true
     }
 }
-
 
 // MARK: - Private
 private extension AppDelegate {

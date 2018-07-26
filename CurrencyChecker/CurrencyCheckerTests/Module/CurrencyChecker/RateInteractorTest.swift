@@ -20,7 +20,7 @@ class RateInteractorTest: QuickSpec {
         describe("Rate interactor test") {
             let rateProvider = MoyaProvider<RateAPI>(stubClosure: MoyaProvider.immediatelyStub)
             let rateService = RateService(rateProvider: rateProvider)
-            
+
             var rateInteractor: RateInteractor!
             var disposeBag: DisposeBag!
             var scheduler: TestScheduler!
@@ -32,7 +32,7 @@ class RateInteractorTest: QuickSpec {
                 rateInteractor = RateInteractorImpl(rateService: rateService, scheduler: scheduler)
                 observer = scheduler.createObserver(Rate.self)
             }
-            
+
             it("returns observable which emits every second") {
                 let expectedCount = 10
                 scheduler.scheduleAt(0) {
@@ -40,9 +40,9 @@ class RateInteractorTest: QuickSpec {
                         .subscribe(observer)
                         .disposed(by: disposeBag)
                 }
-                
+
                 scheduler.advanceTo(expectedCount)
-                
+
                 expect(observer.events.count) == expectedCount
             }
         }

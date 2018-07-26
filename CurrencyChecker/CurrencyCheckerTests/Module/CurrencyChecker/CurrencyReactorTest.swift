@@ -14,7 +14,7 @@ import RxTest
 import ReactorKit
 @testable import CurrencyChecker
 
-class CurrenyRouterTest: QuickSpec {
+class CurrencyReactorTest: QuickSpec {
     override func spec() {
         super.spec()
         describe("Reactor test") {
@@ -26,40 +26,40 @@ class CurrenyRouterTest: QuickSpec {
                 beforeEach {
                     reactor = CurrencyReactor(rateInteractor: mockRateInteractor)
                 }
-                
+
                 it("updates rates after selection of currency") {
                     reactor.action.onNext(.select(currency: someCurrency))
-                    
+
                     expect(reactor.currentState.currencies).toNot(beEmpty())
                 }
-                
+
                 it("change currencies after selection of currency") {
                     reactor.action.onNext(.select(currency: someCurrency))
-                    
+
                     expect(reactor.currentState.currencies.count) == 3
                 }
-                
+
                 it("sets selected currency as first after selection of currency") {
                     reactor.action.onNext(.select(currency: someCurrency))
-                    
+
                     expect(reactor.currentState.currencies[0].name) == someCurrency.name
                 }
-                
+
                 it("update value after typing new value") {
                     let newValue = 10.0
-                    
+
                     reactor.action.onNext(.type(value: newValue))
-                    
+
                     expect(reactor.currentState.currencies[0].value) == newValue
                 }
-                
+
                 it("update currencies after new value") {
                     reactor.action.onNext(.select(currency: someCurrency))
                     let beforeCurrencies = reactor.currentState.currencies
                     let newValue = 10.0
-                    
+
                     reactor.action.onNext(.type(value: newValue))
-                    
+
                     reactor.currentState.currencies.suffix(from: 1).forEach { currency in
                         expect(currency.value) == beforeCurrencies.first { $0.name == currency.name }!.value * newValue
                     }

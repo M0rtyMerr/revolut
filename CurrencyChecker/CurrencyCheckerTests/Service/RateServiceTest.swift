@@ -16,11 +16,11 @@ class RateServiceTest: QuickSpec {
     override func spec() {
         super.spec()
         let rateService = RateService(rateProvider: MoyaProvider<RateAPI>(stubClosure: MoyaProvider.immediatelyStub))
-        
+
         describe("Currency service test") {
             it("returns single, which completes successfully") {
                 let currency = try! rateService.get(base: "EUR").toBlocking().single()
-                
+
                 expect(currency.base) == "EUR"
             }
         }

@@ -15,7 +15,7 @@ struct Currency: Equatable {
 
 extension Currency: IdentifiableType {
     typealias Identity = String
-    
+
     var identity: String {
         return name
     }

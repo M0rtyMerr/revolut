@@ -11,7 +11,7 @@ import RxSwift
 
 class RateInteractorMock: RateInteractor {
     var stubRates = [String: Double]()
-    
+
     func get(base: String) -> Observable<Rate> {
         return .just(Rate(base: base, rates: stubRates))
     }

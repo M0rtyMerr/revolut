@@ -26,7 +26,7 @@
 		78F4192E21072111007E73F6 /* RateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4192D21072111007E73F6 /* RateInteractor.swift */; };
 		78F419302107248B007E73F6 /* RateInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4192F2107248B007E73F6 /* RateInteractorTest.swift */; };
 		78F419342107312D007E73F6 /* CurrencyReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F419332107312D007E73F6 /* CurrencyReactor.swift */; };
-		78F4193821075469007E73F6 /* CurrencySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4193721075469007E73F6 /* CurrencySection.swift */; };
+		78F4193821075469007E73F6 /* CurrenciesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4193721075469007E73F6 /* CurrenciesSection.swift */; };
 		78F4193A21075665007E73F6 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4193921075665007E73F6 /* Currency.swift */; };
 		78F4193C21076696007E73F6 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4193B21076696007E73F6 /* CurrencyTableViewCell.swift */; };
 		78F4193E210766C8007E73F6 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78F4193D210766C8007E73F6 /* CurrencyTableViewCell.xib */; };
@@ -83,7 +83,7 @@
 		78F4192D21072111007E73F6 /* RateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateInteractor.swift; sourceTree = "<group>"; };
 		78F4192F2107248B007E73F6 /* RateInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateInteractorTest.swift; sourceTree = "<group>"; };
 		78F419332107312D007E73F6 /* CurrencyReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyReactor.swift; sourceTree = "<group>"; };
-		78F4193721075469007E73F6 /* CurrencySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySection.swift; sourceTree = "<group>"; };
+		78F4193721075469007E73F6 /* CurrenciesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesSection.swift; sourceTree = "<group>"; };
 		78F4193921075665007E73F6 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		78F4193B21076696007E73F6 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		78F4193D210766C8007E73F6 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
@@ -238,7 +238,7 @@
 				78F4192D21072111007E73F6 /* RateInteractor.swift */,
 				78F418E5210645AB007E73F6 /* CurrencyTableViewController.swift */,
 				78F419332107312D007E73F6 /* CurrencyReactor.swift */,
-				78F4193721075469007E73F6 /* CurrencySection.swift */,
+				78F4193721075469007E73F6 /* CurrenciesSection.swift */,
 				78F4193B21076696007E73F6 /* CurrencyTableViewCell.swift */,
 			);
 			path = CurrencyChecker;
@@ -321,6 +321,7 @@
 				78F418DD210645AB007E73F6 /* Frameworks */,
 				78F418DE210645AB007E73F6 /* Resources */,
 				E4511102AA958FF000D8F2B9 /* [CP] Embed Pods Frameworks */,
+				7848E5972109D57A00A768BA /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -461,6 +462,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7848E5972109D57A00A768BA /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
 		D95C583256E7C3EF2CE0547D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -577,7 +592,7 @@
 				78F4193A21075665007E73F6 /* Currency.swift in Sources */,
 				78F4192921071C48007E73F6 /* RateService.swift in Sources */,
 				78F4191B21064AF0007E73F6 /* Util.swift in Sources */,
-				78F4193821075469007E73F6 /* CurrencySection.swift in Sources */,
+				78F4193821075469007E73F6 /* CurrenciesSection.swift in Sources */,
 				78F4192621071A86007E73F6 /* RateAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

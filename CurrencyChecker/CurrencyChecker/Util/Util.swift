@@ -11,7 +11,7 @@ import Foundation
 class Util {
     private init() {
     }
-    
+
     static func getJSON(name: String) -> Data {
         do {
             return try Data(contentsOf: URL(fileURLWithPath: path(name: name, type: "json")))
@@ -19,7 +19,7 @@ class Util {
             fatalError("Can't read \(name)")
         }
     }
-    
+
     static func path(name: String, type: String) -> String {
         guard let path = Bundle(for: self).path(forResource: name, ofType: type) else {
             fatalError("Error while reading \(name)")

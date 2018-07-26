@@ -15,29 +15,31 @@ enum RateAPI {
 // MARK: - TargetType
 extension RateAPI: TargetType {
     var baseURL: URL {
+        // swiftlint:disable:next force_unwrapping
         return URL(string: "https://revolut.duckdns.org")!
     }
-    
+
     var path: String {
         return "/latest"
     }
-    
+
     var method: Method {
         return .get
     }
-    
+
     var sampleData: Data {
         return Util.getJSON(name: "CurrencyResponse_EUR")
     }
-    
+
     var task: Task {
         switch self {
         case let .get(base):
             return .requestParameters(parameters: ["base": base], encoding: URLEncoding.queryString)
         }
     }
-    
-    var headers: [String : String]? {
+
+    // swiftlint:disable:next discouraged_optional_collection
+    var headers: [String: String]? {
         return ["Content-type": "application/json"]
     }
 }
