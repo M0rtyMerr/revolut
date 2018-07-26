@@ -8,12 +8,12 @@
 
 import Moya
 
-enum CurrencyAPI {
+enum RateAPI {
     case get(base: String)
 }
 
 // MARK: - TargetType
-extension CurrencyAPI: TargetType {
+extension RateAPI: TargetType {
     var baseURL: URL {
         return URL(string: "https://revolut.duckdns.org")!
     }
@@ -27,10 +27,7 @@ extension CurrencyAPI: TargetType {
     }
     
     var sampleData: Data {
-        switch self {
-        case let .get(base):
-            return Util.getJSON(name: base == "EUR" ? "CurrencyResponse_EUR" : "CurrencyResponse_AUD")
-        }
+        return Util.getJSON(name: "CurrencyResponse_EUR")
     }
     
     var task: Task {
