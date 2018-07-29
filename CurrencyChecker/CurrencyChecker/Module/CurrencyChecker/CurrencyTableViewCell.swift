@@ -20,9 +20,8 @@ class CurrencyTableViewCell: UITableViewCell {
         disposeBag = DisposeBag()
     }
 
-    func render(currency: Currency, enabled: Bool) {
+    func render(currency: Currency) {
         value.text = String(currency.value)
         name.text = currency.name
-        value.isEnabled = enabled
     }
 }

@@ -66,7 +66,7 @@ private extension CurrencyTableViewController {
                 configureCell: { _, tableView, indexPath, currency in
                     // swiftlint:disable:next force_cast
                     let cell = tableView.dequeueReusableCell(withIdentifier: self.identifier, for: indexPath) as! CurrencyTableViewCell
-                    cell.render(currency: currency, enabled: false)
+                    cell.render(currency: currency)
                     return cell
                 })
     }
