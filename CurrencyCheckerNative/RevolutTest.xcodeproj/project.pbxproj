@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78129970224CDD9200976460 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78CC29C6224AE24A00D17DBB /* Roboto-Regular.ttf */; };
+		78129971224CDD9500976460 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78CC29C5224AE0F300D17DBB /* Roboto-Medium.ttf */; };
+		78CC2945224AAACC00D17DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2944224AAACC00D17DBB /* AppDelegate.swift */; };
+		78CC2947224AAACC00D17DBB /* PairsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2946224AAACC00D17DBB /* PairsViewController.swift */; };
+		78CC294C224AAACE00D17DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CC294B224AAACE00D17DBB /* Assets.xcassets */; };
+		78CC294F224AAACE00D17DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CC294D224AAACE00D17DBB /* LaunchScreen.storyboard */; };
+		78CC2977224AAE9200D17DBB /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2976224AAE9200D17DBB /* CurrencyService.swift */; };
+		78CC297C224AAFE000D17DBB /* CurrencyServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC297B224AAFE000D17DBB /* CurrencyServiceImpl.swift */; };
+		78CC297E224ABC5200D17DBB /* RevolutError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC297D224ABC5200D17DBB /* RevolutError.swift */; };
+		78CC2983224ABE7C00D17DBB /* PairsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2982224ABE7C00D17DBB /* PairsViewModel.swift */; };
+		78CC2985224ABFBC00D17DBB /* PairsViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2984224ABFBC00D17DBB /* PairsViewModelImpl.swift */; };
+		78CC298B224AC18700D17DBB /* CurrencyPairsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC298A224AC18700D17DBB /* CurrencyPairsRepository.swift */; };
+		78CC298E224AC1DF00D17DBB /* CurrencyPairsRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC298D224AC1DF00D17DBB /* CurrencyPairsRepositoryImpl.swift */; };
+		78CC2992224AC3B500D17DBB /* PairsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2991224AC3B500D17DBB /* PairsCoordinator.swift */; };
+		78CC2995224AC3F300D17DBB /* PairsCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2994224AC3F300D17DBB /* PairsCoordinatorImpl.swift */; };
+		78CC2997224AC47100D17DBB /* SelectCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2996224AC47100D17DBB /* SelectCurrencyViewController.swift */; };
+		78CC299E224AC8A500D17DBB /* StoryboardInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC299D224AC8A500D17DBB /* StoryboardInstantiatable.swift */; };
+		78CC29A0224ACA7C00D17DBB /* PairsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CC299F224ACA7C00D17DBB /* PairsViewController.storyboard */; };
+		78CC29A4224ADB9A00D17DBB /* CurrencyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29A3224ADB9A00D17DBB /* CurrencyPair.swift */; };
+		78CC29A6224ADBCE00D17DBB /* CurrencyPairTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29A5224ADBCE00D17DBB /* CurrencyPairTableViewCell.swift */; };
+		78CC29A9224ADC0100D17DBB /* CurrencyPairTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78CC29A8224ADC0100D17DBB /* CurrencyPairTableViewCell.xib */; };
+		78CC29C9224AE78E00D17DBB /* PairsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29C8224AE78E00D17DBB /* PairsEmptyView.swift */; };
+		78CC29CC224AE79E00D17DBB /* PairsEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78CC29CB224AE79E00D17DBB /* PairsEmptyView.xib */; };
+		78CC29CF224AEAF100D17DBB /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29CE224AEAF100D17DBB /* NibInstantiatable.swift */; };
+		78CC29D1224AEC7400D17DBB /* PairsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29D0224AEC7400D17DBB /* PairsHeaderView.swift */; };
+		78CC29D4224AECBD00D17DBB /* PairsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78CC29D3224AECBD00D17DBB /* PairsHeaderView.xib */; };
+		78CC29D6224AF59600D17DBB /* SelectCurrencyViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29D5224AF59600D17DBB /* SelectCurrencyViewModelImpl.swift */; };
+		78CC29D8224AF5F800D17DBB /* SelectCurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29D7224AF5F800D17DBB /* SelectCurrencyViewModel.swift */; };
+		78CC29DA224AF6BD00D17DBB /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29D9224AF6BD00D17DBB /* Currency.swift */; };
+		78CC29DC224AF8A700D17DBB /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29DB224AF8A700D17DBB /* CurrencyTableViewCell.swift */; };
+		78CC29DE224AF8B200D17DBB /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78CC29DD224AF8B200D17DBB /* CurrencyTableViewCell.xib */; };
+		78CC29E1224AFB8200D17DBB /* SelectCurrencyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CC29E0224AFB8200D17DBB /* SelectCurrencyViewController.storyboard */; };
+		78CC29E3224B8F5600D17DBB /* SelectCurrencyCoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29E2224B8F5600D17DBB /* SelectCurrencyCoordinatorImpl.swift */; };
+		78CC29E5224B9FC900D17DBB /* SelectCurrencyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29E4224B9FC900D17DBB /* SelectCurrencyViewModelTests.swift */; };
+		78CC29F0224BA4E400D17DBB /* CurrencyCellDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29EF224BA4E400D17DBB /* CurrencyCellDto.swift */; };
+		78CC29F2224BAE2D00D17DBB /* PairsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29F1224BAE2D00D17DBB /* PairsViewModelTests.swift */; };
+		78CC29F6224BB01700D17DBB /* Collection+safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29F5224BB01700D17DBB /* Collection+safe.swift */; };
+		78CC29F8224BBCC900D17DBB /* SelectCurrencyCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29F7224BBCC900D17DBB /* SelectCurrencyCoordinatorTests.swift */; };
+		78CC29FA224BBE4900D17DBB /* SelectCurrencyViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29F9224BBE4900D17DBB /* SelectCurrencyViewControllerTests.swift */; };
+		78CC29FC224BBE8000D17DBB /* MockSelectCurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29FB224BBE8000D17DBB /* MockSelectCurrencyViewModel.swift */; };
+		78CC29FE224BC20300D17DBB /* PairsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29FD224BC20300D17DBB /* PairsViewControllerTests.swift */; };
+		78CC2A00224BC24900D17DBB /* MockPairsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29FF224BC24900D17DBB /* MockPairsViewModel.swift */; };
+		78CC2A02224BCB4D00D17DBB /* CurrencyPairsRepositoryImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2A01224BCB4D00D17DBB /* CurrencyPairsRepositoryImplTests.swift */; };
+		78CC2A08224BD0AE00D17DBB /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2A07224BD0AE00D17DBB /* MockViewController.swift */; };
+		78CC2A0A224BD33C00D17DBB /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2A09224BD33C00D17DBB /* Util.swift */; };
+		78CC2A0C224BD3A300D17DBB /* currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 78CC2A0B224BD3A300D17DBB /* currencies.json */; };
+		78CC2A11224BFAC900D17DBB /* SelectCurrencyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2A10224BFAC900D17DBB /* SelectCurrencyCoordinator.swift */; };
+		78CC2A15224BFF4900D17DBB /* PairsCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC2A14224BFF4900D17DBB /* PairsCoordinatorTests.swift */; };
+		78CC2A32224C105C00D17DBB /* MockCurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29E8224BA06B00D17DBB /* MockCurrencyService.swift */; };
+		78CC2A33224C107800D17DBB /* MockCurrencyPairsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29EB224BA1B000D17DBB /* MockCurrencyPairsRepository.swift */; };
+		78CC2A34224C108A00D17DBB /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29ED224BA2ED00D17DBB /* Random.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78CC2956224AAACE00D17DBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78CC2939224AAACC00D17DBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78CC2940224AAACC00D17DBB;
+			remoteInfo = RevolutTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78CC2941224AAACC00D17DBB /* RevolutTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevolutTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78CC2944224AAACC00D17DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78CC2946224AAACC00D17DBB /* PairsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsViewController.swift; sourceTree = "<group>"; };
+		78CC294B224AAACE00D17DBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78CC294E224AAACE00D17DBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78CC2950224AAACE00D17DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78CC2955224AAACE00D17DBB /* RevolutTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevolutTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78CC295B224AAACE00D17DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78CC2976224AAE9200D17DBB /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		78CC297B224AAFE000D17DBB /* CurrencyServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyServiceImpl.swift; sourceTree = "<group>"; };
+		78CC297D224ABC5200D17DBB /* RevolutError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevolutError.swift; sourceTree = "<group>"; };
+		78CC2982224ABE7C00D17DBB /* PairsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsViewModel.swift; sourceTree = "<group>"; };
+		78CC2984224ABFBC00D17DBB /* PairsViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsViewModelImpl.swift; sourceTree = "<group>"; };
+		78CC298A224AC18700D17DBB /* CurrencyPairsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairsRepository.swift; sourceTree = "<group>"; };
+		78CC298D224AC1DF00D17DBB /* CurrencyPairsRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairsRepositoryImpl.swift; sourceTree = "<group>"; };
+		78CC2991224AC3B500D17DBB /* PairsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsCoordinator.swift; sourceTree = "<group>"; };
+		78CC2994224AC3F300D17DBB /* PairsCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsCoordinatorImpl.swift; sourceTree = "<group>"; };
+		78CC2996224AC47100D17DBB /* SelectCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewController.swift; sourceTree = "<group>"; };
+		78CC299D224AC8A500D17DBB /* StoryboardInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatable.swift; sourceTree = "<group>"; };
+		78CC299F224ACA7C00D17DBB /* PairsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PairsViewController.storyboard; sourceTree = "<group>"; };
+		78CC29A3224ADB9A00D17DBB /* CurrencyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPair.swift; sourceTree = "<group>"; };
+		78CC29A5224ADBCE00D17DBB /* CurrencyPairTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairTableViewCell.swift; sourceTree = "<group>"; };
+		78CC29A8224ADC0100D17DBB /* CurrencyPairTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyPairTableViewCell.xib; sourceTree = "<group>"; };
+		78CC29C5224AE0F300D17DBB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		78CC29C6224AE24A00D17DBB /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		78CC29C8224AE78E00D17DBB /* PairsEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsEmptyView.swift; sourceTree = "<group>"; };
+		78CC29CB224AE79E00D17DBB /* PairsEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairsEmptyView.xib; sourceTree = "<group>"; };
+		78CC29CE224AEAF100D17DBB /* NibInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInstantiatable.swift; sourceTree = "<group>"; };
+		78CC29D0224AEC7400D17DBB /* PairsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsHeaderView.swift; sourceTree = "<group>"; };
+		78CC29D3224AECBD00D17DBB /* PairsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairsHeaderView.xib; sourceTree = "<group>"; };
+		78CC29D5224AF59600D17DBB /* SelectCurrencyViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewModelImpl.swift; sourceTree = "<group>"; };
+		78CC29D7224AF5F800D17DBB /* SelectCurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewModel.swift; sourceTree = "<group>"; };
+		78CC29D9224AF6BD00D17DBB /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		78CC29DB224AF8A700D17DBB /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		78CC29DD224AF8B200D17DBB /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		78CC29E0224AFB8200D17DBB /* SelectCurrencyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectCurrencyViewController.storyboard; sourceTree = "<group>"; };
+		78CC29E2224B8F5600D17DBB /* SelectCurrencyCoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyCoordinatorImpl.swift; sourceTree = "<group>"; };
+		78CC29E4224B9FC900D17DBB /* SelectCurrencyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewModelTests.swift; sourceTree = "<group>"; };
+		78CC29E8224BA06B00D17DBB /* MockCurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrencyService.swift; sourceTree = "<group>"; };
+		78CC29EB224BA1B000D17DBB /* MockCurrencyPairsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrencyPairsRepository.swift; sourceTree = "<group>"; };
+		78CC29ED224BA2ED00D17DBB /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		78CC29EF224BA4E400D17DBB /* CurrencyCellDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCellDto.swift; sourceTree = "<group>"; };
+		78CC29F1224BAE2D00D17DBB /* PairsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsViewModelTests.swift; sourceTree = "<group>"; };
+		78CC29F5224BB01700D17DBB /* Collection+safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+safe.swift"; sourceTree = "<group>"; };
+		78CC29F7224BBCC900D17DBB /* SelectCurrencyCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyCoordinatorTests.swift; sourceTree = "<group>"; };
+		78CC29F9224BBE4900D17DBB /* SelectCurrencyViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewControllerTests.swift; sourceTree = "<group>"; };
+		78CC29FB224BBE8000D17DBB /* MockSelectCurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSelectCurrencyViewModel.swift; sourceTree = "<group>"; };
+		78CC29FD224BC20300D17DBB /* PairsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsViewControllerTests.swift; sourceTree = "<group>"; };
+		78CC29FF224BC24900D17DBB /* MockPairsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPairsViewModel.swift; sourceTree = "<group>"; };
+		78CC2A01224BCB4D00D17DBB /* CurrencyPairsRepositoryImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPairsRepositoryImplTests.swift; sourceTree = "<group>"; };
+		78CC2A07224BD0AE00D17DBB /* MockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
+		78CC2A09224BD33C00D17DBB /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		78CC2A0B224BD3A300D17DBB /* currencies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currencies.json; sourceTree = "<group>"; };
+		78CC2A10224BFAC900D17DBB /* SelectCurrencyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyCoordinator.swift; sourceTree = "<group>"; };
+		78CC2A14224BFF4900D17DBB /* PairsCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsCoordinatorTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78CC293E224AAACC00D17DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78CC2952224AAACE00D17DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78CC2938224AAACC00D17DBB = {
+			isa = PBXGroup;
+			children = (
+				78CC2943224AAACC00D17DBB /* RevolutTest */,
+				78CC2958224AAACE00D17DBB /* RevolutTestTests */,
+				78CC2942224AAACC00D17DBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78CC2942224AAACC00D17DBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78CC2941224AAACC00D17DBB /* RevolutTest.app */,
+				78CC2955224AAACE00D17DBB /* RevolutTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78CC2943224AAACC00D17DBB /* RevolutTest */ = {
+			isa = PBXGroup;
+			children = (
+				78CC2944224AAACC00D17DBB /* AppDelegate.swift */,
+				78CC29C7224AE24D00D17DBB /* Resources */,
+				78CC2981224ABE6E00D17DBB /* Screen */,
+				78CC294B224AAACE00D17DBB /* Assets.xcassets */,
+				78CC294D224AAACE00D17DBB /* LaunchScreen.storyboard */,
+				78CC2950224AAACE00D17DBB /* Info.plist */,
+				78CC297A224AAFD400D17DBB /* Service */,
+				78CC297F224ABD9800D17DBB /* Model */,
+				78CC29CD224AEAD500D17DBB /* Util */,
+			);
+			path = RevolutTest;
+			sourceTree = "<group>";
+		};
+		78CC2958224AAACE00D17DBB /* RevolutTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				78CC295B224AAACE00D17DBB /* Info.plist */,
+				78CC29F4224BAE4100D17DBB /* TestUtil */,
+				78CC29EA224BA11B00D17DBB /* Mock */,
+				78CC29E7224B9FD600D17DBB /* Screen */,
+			);
+			path = RevolutTestTests;
+			sourceTree = "<group>";
+		};
+		78CC297A224AAFD400D17DBB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				78CC2976224AAE9200D17DBB /* CurrencyService.swift */,
+				78CC298C224AC1CC00D17DBB /* Implementation */,
+				78CC298A224AC18700D17DBB /* CurrencyPairsRepository.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		78CC297F224ABD9800D17DBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78CC297D224ABC5200D17DBB /* RevolutError.swift */,
+				78CC29A3224ADB9A00D17DBB /* CurrencyPair.swift */,
+				78CC29D9224AF6BD00D17DBB /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78CC2980224ABE6100D17DBB /* Pairs */ = {
+			isa = PBXGroup;
+			children = (
+				78CC2946224AAACC00D17DBB /* PairsViewController.swift */,
+				78CC2982224ABE7C00D17DBB /* PairsViewModel.swift */,
+				78CC2993224AC3E700D17DBB /* Implementation */,
+				78CC2991224AC3B500D17DBB /* PairsCoordinator.swift */,
+				78CC299F224ACA7C00D17DBB /* PairsViewController.storyboard */,
+				78CC29A7224ADBD300D17DBB /* Cell */,
+				78CC29CA224AE79100D17DBB /* Empty */,
+				78CC29D2224AEC8B00D17DBB /* Header */,
+			);
+			path = Pairs;
+			sourceTree = "<group>";
+		};
+		78CC2981224ABE6E00D17DBB /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				78CC2980224ABE6100D17DBB /* Pairs */,
+				78CC299A224AC71600D17DBB /* SelectCurrency */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		78CC298C224AC1CC00D17DBB /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				78CC297B224AAFE000D17DBB /* CurrencyServiceImpl.swift */,
+				78CC298D224AC1DF00D17DBB /* CurrencyPairsRepositoryImpl.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		78CC2993224AC3E700D17DBB /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				78CC2984224ABFBC00D17DBB /* PairsViewModelImpl.swift */,
+				78CC2994224AC3F300D17DBB /* PairsCoordinatorImpl.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		78CC299A224AC71600D17DBB /* SelectCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				78CC2996224AC47100D17DBB /* SelectCurrencyViewController.swift */,
+				78CC2A0F224BFAB700D17DBB /* Implementation */,
+				78CC29D7224AF5F800D17DBB /* SelectCurrencyViewModel.swift */,
+				78CC29DF224AF8D900D17DBB /* Cell */,
+				78CC29E0224AFB8200D17DBB /* SelectCurrencyViewController.storyboard */,
+				78CC2A10224BFAC900D17DBB /* SelectCurrencyCoordinator.swift */,
+			);
+			path = SelectCurrency;
+			sourceTree = "<group>";
+		};
+		78CC29A7224ADBD300D17DBB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				78CC29A5224ADBCE00D17DBB /* CurrencyPairTableViewCell.swift */,
+				78CC29A8224ADC0100D17DBB /* CurrencyPairTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		78CC29C7224AE24D00D17DBB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78CC2A0B224BD3A300D17DBB /* currencies.json */,
+				78CC29C6224AE24A00D17DBB /* Roboto-Regular.ttf */,
+				78CC29C5224AE0F300D17DBB /* Roboto-Medium.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		78CC29CA224AE79100D17DBB /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				78CC29C8224AE78E00D17DBB /* PairsEmptyView.swift */,
+				78CC29CB224AE79E00D17DBB /* PairsEmptyView.xib */,
+			);
+			path = Empty;
+			sourceTree = "<group>";
+		};
+		78CC29CD224AEAD500D17DBB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				78CC299D224AC8A500D17DBB /* StoryboardInstantiatable.swift */,
+				78CC29CE224AEAF100D17DBB /* NibInstantiatable.swift */,
+				78CC29F5224BB01700D17DBB /* Collection+safe.swift */,
+				78CC2A09224BD33C00D17DBB /* Util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		78CC29D2224AEC8B00D17DBB /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				78CC29D0224AEC7400D17DBB /* PairsHeaderView.swift */,
+				78CC29D3224AECBD00D17DBB /* PairsHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		78CC29DF224AF8D900D17DBB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				78CC29DB224AF8A700D17DBB /* CurrencyTableViewCell.swift */,
+				78CC29DD224AF8B200D17DBB /* CurrencyTableViewCell.xib */,
+				78CC29EF224BA4E400D17DBB /* CurrencyCellDto.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		78CC29E6224B9FCE00D17DBB /* SelectCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				78CC29E4224B9FC900D17DBB /* SelectCurrencyViewModelTests.swift */,
+				78CC29F7224BBCC900D17DBB /* SelectCurrencyCoordinatorTests.swift */,
+				78CC29F9224BBE4900D17DBB /* SelectCurrencyViewControllerTests.swift */,
+			);
+			path = SelectCurrency;
+			sourceTree = "<group>";
+		};
+		78CC29E7224B9FD600D17DBB /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				78CC29E6224B9FCE00D17DBB /* SelectCurrency */,
+				78CC29F3224BAE3000D17DBB /* Pairs */,
+				78CC2A03224BCB5200D17DBB /* Service */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		78CC29EA224BA11B00D17DBB /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				78CC29E8224BA06B00D17DBB /* MockCurrencyService.swift */,
+				78CC29EB224BA1B000D17DBB /* MockCurrencyPairsRepository.swift */,
+				78CC29FB224BBE8000D17DBB /* MockSelectCurrencyViewModel.swift */,
+				78CC29FF224BC24900D17DBB /* MockPairsViewModel.swift */,
+				78CC2A07224BD0AE00D17DBB /* MockViewController.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		78CC29F3224BAE3000D17DBB /* Pairs */ = {
+			isa = PBXGroup;
+			children = (
+				78CC29F1224BAE2D00D17DBB /* PairsViewModelTests.swift */,
+				78CC29FD224BC20300D17DBB /* PairsViewControllerTests.swift */,
+				78CC2A14224BFF4900D17DBB /* PairsCoordinatorTests.swift */,
+			);
+			path = Pairs;
+			sourceTree = "<group>";
+		};
+		78CC29F4224BAE4100D17DBB /* TestUtil */ = {
+			isa = PBXGroup;
+			children = (
+				78CC29ED224BA2ED00D17DBB /* Random.swift */,
+			);
+			path = TestUtil;
+			sourceTree = "<group>";
+		};
+		78CC2A03224BCB5200D17DBB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				78CC2A04224BCB5700D17DBB /* Implementation */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		78CC2A04224BCB5700D17DBB /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				78CC2A01224BCB4D00D17DBB /* CurrencyPairsRepositoryImplTests.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		78CC2A0F224BFAB700D17DBB /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				78CC29D5224AF59600D17DBB /* SelectCurrencyViewModelImpl.swift */,
+				78CC29E2224B8F5600D17DBB /* SelectCurrencyCoordinatorImpl.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78CC2940224AAACC00D17DBB /* RevolutTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78CC2969224AAACE00D17DBB /* Build configuration list for PBXNativeTarget "RevolutTest" */;
+			buildPhases = (
+				78CC293D224AAACC00D17DBB /* Sources */,
+				78CC293E224AAACC00D17DBB /* Frameworks */,
+				78CC293F224AAACC00D17DBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RevolutTest;
+			productName = RevolutTest;
+			productReference = 78CC2941224AAACC00D17DBB /* RevolutTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78CC2954224AAACE00D17DBB /* RevolutTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78CC296C224AAACE00D17DBB /* Build configuration list for PBXNativeTarget "RevolutTestTests" */;
+			buildPhases = (
+				78CC2951224AAACE00D17DBB /* Sources */,
+				78CC2952224AAACE00D17DBB /* Frameworks */,
+				78CC2953224AAACE00D17DBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78CC2957224AAACE00D17DBB /* PBXTargetDependency */,
+			);
+			name = RevolutTestTests;
+			productName = RevolutTestTests;
+			productReference = 78CC2955224AAACE00D17DBB /* RevolutTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78CC2939224AAACC00D17DBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Anton Nazarov";
+				TargetAttributes = {
+					78CC2940224AAACC00D17DBB = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					78CC2954224AAACE00D17DBB = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+						TestTargetID = 78CC2940224AAACC00D17DBB;
+					};
+				};
+			};
+			buildConfigurationList = 78CC293C224AAACC00D17DBB /* Build configuration list for PBXProject "RevolutTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78CC2938224AAACC00D17DBB;
+			productRefGroup = 78CC2942224AAACC00D17DBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78CC2940224AAACC00D17DBB /* RevolutTest */,
+				78CC2954224AAACE00D17DBB /* RevolutTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78CC293F224AAACC00D17DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78CC29E1224AFB8200D17DBB /* SelectCurrencyViewController.storyboard in Resources */,
+				78CC29DE224AF8B200D17DBB /* CurrencyTableViewCell.xib in Resources */,
+				78129970224CDD9200976460 /* Roboto-Regular.ttf in Resources */,
+				78CC29A9224ADC0100D17DBB /* CurrencyPairTableViewCell.xib in Resources */,
+				78CC29CC224AE79E00D17DBB /* PairsEmptyView.xib in Resources */,
+				78CC294F224AAACE00D17DBB /* LaunchScreen.storyboard in Resources */,
+				78CC2A0C224BD3A300D17DBB /* currencies.json in Resources */,
+				78CC29A0224ACA7C00D17DBB /* PairsViewController.storyboard in Resources */,
+				78129971224CDD9500976460 /* Roboto-Medium.ttf in Resources */,
+				78CC294C224AAACE00D17DBB /* Assets.xcassets in Resources */,
+				78CC29D4224AECBD00D17DBB /* PairsHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78CC2953224AAACE00D17DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78CC293D224AAACC00D17DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78CC2997224AC47100D17DBB /* SelectCurrencyViewController.swift in Sources */,
+				78CC29E3224B8F5600D17DBB /* SelectCurrencyCoordinatorImpl.swift in Sources */,
+				78CC298E224AC1DF00D17DBB /* CurrencyPairsRepositoryImpl.swift in Sources */,
+				78CC29CF224AEAF100D17DBB /* NibInstantiatable.swift in Sources */,
+				78CC2947224AAACC00D17DBB /* PairsViewController.swift in Sources */,
+				78CC2992224AC3B500D17DBB /* PairsCoordinator.swift in Sources */,
+				78CC29C9224AE78E00D17DBB /* PairsEmptyView.swift in Sources */,
+				78CC2A0A224BD33C00D17DBB /* Util.swift in Sources */,
+				78CC29F0224BA4E400D17DBB /* CurrencyCellDto.swift in Sources */,
+				78CC297C224AAFE000D17DBB /* CurrencyServiceImpl.swift in Sources */,
+				78CC29DC224AF8A700D17DBB /* CurrencyTableViewCell.swift in Sources */,
+				78CC2945224AAACC00D17DBB /* AppDelegate.swift in Sources */,
+				78CC29D6224AF59600D17DBB /* SelectCurrencyViewModelImpl.swift in Sources */,
+				78CC2995224AC3F300D17DBB /* PairsCoordinatorImpl.swift in Sources */,
+				78CC29D1224AEC7400D17DBB /* PairsHeaderView.swift in Sources */,
+				78CC29DA224AF6BD00D17DBB /* Currency.swift in Sources */,
+				78CC29D8224AF5F800D17DBB /* SelectCurrencyViewModel.swift in Sources */,
+				78CC29A6224ADBCE00D17DBB /* CurrencyPairTableViewCell.swift in Sources */,
+				78CC2977224AAE9200D17DBB /* CurrencyService.swift in Sources */,
+				78CC2983224ABE7C00D17DBB /* PairsViewModel.swift in Sources */,
+				78CC298B224AC18700D17DBB /* CurrencyPairsRepository.swift in Sources */,
+				78CC2985224ABFBC00D17DBB /* PairsViewModelImpl.swift in Sources */,
+				78CC299E224AC8A500D17DBB /* StoryboardInstantiatable.swift in Sources */,
+				78CC29A4224ADB9A00D17DBB /* CurrencyPair.swift in Sources */,
+				78CC2A11224BFAC900D17DBB /* SelectCurrencyCoordinator.swift in Sources */,
+				78CC297E224ABC5200D17DBB /* RevolutError.swift in Sources */,
+				78CC29F6224BB01700D17DBB /* Collection+safe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78CC2951224AAACE00D17DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78CC2A33224C107800D17DBB /* MockCurrencyPairsRepository.swift in Sources */,
+				78CC2A15224BFF4900D17DBB /* PairsCoordinatorTests.swift in Sources */,
+				78CC29FA224BBE4900D17DBB /* SelectCurrencyViewControllerTests.swift in Sources */,
+				78CC29F8224BBCC900D17DBB /* SelectCurrencyCoordinatorTests.swift in Sources */,
+				78CC29E5224B9FC900D17DBB /* SelectCurrencyViewModelTests.swift in Sources */,
+				78CC2A02224BCB4D00D17DBB /* CurrencyPairsRepositoryImplTests.swift in Sources */,
+				78CC29FE224BC20300D17DBB /* PairsViewControllerTests.swift in Sources */,
+				78CC2A08224BD0AE00D17DBB /* MockViewController.swift in Sources */,
+				78CC29F2224BAE2D00D17DBB /* PairsViewModelTests.swift in Sources */,
+				78CC2A32224C105C00D17DBB /* MockCurrencyService.swift in Sources */,
+				78CC2A00224BC24900D17DBB /* MockPairsViewModel.swift in Sources */,
+				78CC2A34224C108A00D17DBB /* Random.swift in Sources */,
+				78CC29FC224BBE8000D17DBB /* MockSelectCurrencyViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78CC2957224AAACE00D17DBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78CC2940224AAACC00D17DBB /* RevolutTest */;
+			targetProxy = 78CC2956224AAACE00D17DBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78CC294D224AAACE00D17DBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78CC294E224AAACE00D17DBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78CC2967224AAACE00D17DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78CC2968224AAACE00D17DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78CC296A224AAACE00D17DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6T8BHG2NB;
+				INFOPLIST_FILE = RevolutTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MortyMerr.RevolutTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78CC296B224AAACE00D17DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6T8BHG2NB;
+				INFOPLIST_FILE = RevolutTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MortyMerr.RevolutTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78CC296D224AAACE00D17DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6T8BHG2NB;
+				INFOPLIST_FILE = RevolutTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MortyMerr.RevolutTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RevolutTest.app/RevolutTest";
+			};
+			name = Debug;
+		};
+		78CC296E224AAACE00D17DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6T8BHG2NB;
+				INFOPLIST_FILE = RevolutTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MortyMerr.RevolutTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RevolutTest.app/RevolutTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78CC293C224AAACC00D17DBB /* Build configuration list for PBXProject "RevolutTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78CC2967224AAACE00D17DBB /* Debug */,
+				78CC2968224AAACE00D17DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78CC2969224AAACE00D17DBB /* Build configuration list for PBXNativeTarget "RevolutTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78CC296A224AAACE00D17DBB /* Debug */,
+				78CC296B224AAACE00D17DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78CC296C224AAACE00D17DBB /* Build configuration list for PBXNativeTarget "RevolutTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78CC296D224AAACE00D17DBB /* Debug */,
+				78CC296E224AAACE00D17DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78CC2939224AAACC00D17DBB /* Project object */;
+}

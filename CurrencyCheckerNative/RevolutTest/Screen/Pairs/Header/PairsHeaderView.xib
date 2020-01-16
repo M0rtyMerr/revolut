@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PairsHeaderView" customModule="RevolutTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2B-QH-HpB">
+                    <rect key="frame" x="17" y="17" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="2eI-xM-OXP"/>
+                        <constraint firstAttribute="height" constant="40" id="mlQ-H8-AvU"/>
+                    </constraints>
+                    <state key="normal" image="Plus"/>
+                    <connections>
+                        <action selector="add" destination="iN0-l3-epB" eventType="touchUpInside" id="Cl9-QV-pTc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOm-RZ-tOg">
+                    <rect key="frame" x="73" y="21" width="136" height="32"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                    <state key="normal" title="Add currency pair">
+                        <color key="titleColor" red="0.0" green="0.45882352939999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="add" destination="iN0-l3-epB" eventType="touchUpInside" id="MpN-zL-wob"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wOm-RZ-tOg" firstAttribute="leading" secondItem="B2B-QH-HpB" secondAttribute="trailing" constant="16" id="OiK-uo-p6L"/>
+                <constraint firstItem="wOm-RZ-tOg" firstAttribute="centerY" secondItem="B2B-QH-HpB" secondAttribute="centerY" id="OyK-eU-Iwc"/>
+                <constraint firstItem="B2B-QH-HpB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="17" id="cUf-WE-xJZ"/>
+                <constraint firstItem="B2B-QH-HpB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="17" id="cfk-jR-6HU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="B2B-QH-HpB" secondAttribute="bottom" constant="17" id="fe0-l4-rWB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wOm-RZ-tOg" secondAttribute="trailing" constant="10" id="rwM-q8-DbB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-72" y="221"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Plus" width="40" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PairsEmptyView" customModule="RevolutTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QZ-nb-xPD">
+                    <rect key="frame" x="0.0" y="382" width="414" height="132"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs8-ZS-BNF">
+                            <rect key="frame" x="187" y="0.0" width="40" height="40"/>
+                            <state key="normal" image="Plus"/>
+                            <connections>
+                                <action selector="add" destination="iN0-l3-epB" eventType="touchUpInside" id="Kgm-wH-0Yn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejg-Xh-QkN">
+                            <rect key="frame" x="30" y="50" width="354" height="32"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                            <state key="normal" title="Add currency pair">
+                                <color key="titleColor" red="0.0" green="0.45882352939999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="add" destination="iN0-l3-epB" eventType="touchUpInside" id="4Ae-pt-RQn"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a currency pair to compare their live rate" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZ1-Wh-EfY">
+                            <rect key="frame" x="30" y="92" width="354" height="40"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                            <color key="textColor" red="0.5450980392" green="0.58431372550000005" blue="0.61960784310000006" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ejg-Xh-QkN" firstAttribute="top" secondItem="bs8-ZS-BNF" secondAttribute="bottom" constant="10" id="46f-NX-V4p"/>
+                        <constraint firstItem="bs8-ZS-BNF" firstAttribute="top" secondItem="8QZ-nb-xPD" secondAttribute="top" id="5Oa-BX-0N9"/>
+                        <constraint firstItem="ejg-Xh-QkN" firstAttribute="leading" secondItem="8QZ-nb-xPD" secondAttribute="leading" constant="30" id="7zR-9T-wuP"/>
+                        <constraint firstItem="WZ1-Wh-EfY" firstAttribute="top" secondItem="ejg-Xh-QkN" secondAttribute="bottom" constant="10" id="KSX-yy-mM8"/>
+                        <constraint firstItem="WZ1-Wh-EfY" firstAttribute="leading" secondItem="8QZ-nb-xPD" secondAttribute="leading" constant="30" id="M9C-eI-M0E"/>
+                        <constraint firstItem="bs8-ZS-BNF" firstAttribute="centerX" secondItem="8QZ-nb-xPD" secondAttribute="centerX" id="edd-GO-5Tb"/>
+                        <constraint firstAttribute="trailing" secondItem="ejg-Xh-QkN" secondAttribute="trailing" constant="30" id="nBK-5M-unD"/>
+                        <constraint firstAttribute="bottom" secondItem="WZ1-Wh-EfY" secondAttribute="bottom" id="ntd-WS-eEm"/>
+                        <constraint firstAttribute="trailing" secondItem="WZ1-Wh-EfY" secondAttribute="trailing" constant="30" id="q7V-0Z-poT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8QZ-nb-xPD" secondAttribute="trailing" id="2dA-Ym-Xsa"/>
+                <constraint firstItem="8QZ-nb-xPD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CFY-ra-rZv"/>
+                <constraint firstItem="8QZ-nb-xPD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Lli-ep-eR6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Plus" width="40" height="40"/>
+    </resources>
+</document>
